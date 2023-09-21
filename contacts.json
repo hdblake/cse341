@@ -1,0 +1,23 @@
+{
+	"contact": {
+		"firstName": "Mackenzie",
+		"lastName": "Blake",
+		"email": "macblake@fakeemail.com",
+		"favColor": "Sage Green",
+		"birthday": "12/17/96"
+	},
+	"contact2": {
+		"firstName": "Jacob",
+		"lastName": "Brown",
+		"email": "jacobbrown@fakeemail.com",
+		"favColor": "Green",
+		"birthday": "09/19/96"
+	},
+	"contact3": {
+		"firstName": "Kathy",
+		"lastName": "Wilson",
+		"email": "kathywilson@fakeemail.com",
+		"favColor": "Purple",
+		"birthday": "09/04/65"
+	}
+}

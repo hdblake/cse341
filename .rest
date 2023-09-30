@@ -25,5 +25,12 @@ content-type: application/json
 }
 
 ###
+PUT https://cse341-o9h4.onrender.com/contacts/650ccf0062650a8fa49cc4ab HTTP/1.1
+content-type: application/json
+{
+  "firstName":"Hunter", "lastName":"Blake", "email":"hunter@fakeemail.net", "favColor":"Blue", "birthday":"06/01/1997"
+}
+
+###
 DELETE https://cse341-o9h4.onrender.com/contacts/650ccf0062650a8fa49cc4ab HTTP/1.1
 

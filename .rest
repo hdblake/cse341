@@ -16,8 +16,8 @@ GET https://cse341-o9h4.onrender.com/contacts HTTP/1.1
 ###
 GET https://cse341-o9h4.onrender.com/contacts/650ccf0062650a8fa49cc4ab HTTP/1.1
 
-### Create contact
-POST https://cse341-o9h4.onrender.com/contacts HTTP/1.1 content-type: application/json
+###
+POST https://cse341-o9h4.onrender.com/contacts HTTP/1.1
 {
   "firstName":"Hunter", "lastName":"Blake", "email":"hunter@fakeemail.com", "favColor":"Orange", "birthday":"06/01/1997"
 }

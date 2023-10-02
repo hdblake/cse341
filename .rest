@@ -1,11 +1,12 @@
-// Localhost deployment
-GET http://localhost:3000/contacts HTTP/1.1
+// Local Routes
+###
+GET https://localhost:3000/contacts HTTP/1.1
 
 ###
-GET http://localhost:3000/contacts/650ccf0062650a8fa49cc4ab HTTP/1.1
+GET https://localhost:3000/contacts/650ccf0062650a8fa49cc4ab HTTP/1.1
 
-### Create contact
-POST http://localhost:3000/contacts HTTP/1.1
+###
+POST https://localhost:3000/contacts HTTP/1.1
 content-type: application/json
 
 {
@@ -15,6 +16,21 @@ content-type: application/json
   "favColor":"Orange", 
   "birthday":"06/01/1997"
 }
+
+###
+PUT https://localhost:3000/contacts/651870a58cb262bd51a7bc31 HTTP/1.1
+content-type: application/json
+
+{
+  "firstName":"Hunter", 
+  "lastName":"Blake", 
+  "email":"hunter@fakeemail.net", 
+  "favColor":"Blue", 
+  "birthday":"06/01/1997"
+}
+
+###
+DELETE https://localhost:3000/contacts/651870a58cb262bd51a7bc31 HTTP/1.1
 
 ###
 GET https://cse341-o9h4.onrender.com/contacts HTTP/1.1

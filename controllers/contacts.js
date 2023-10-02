@@ -82,7 +82,7 @@ const deleteContact = async (req, res) => {
     .getDb()
     .db()
     .collection("contacts")
-    .remove({ _id: contactId }, true);
+    .deleteOne({ _id: contactId }, contactId);
 
   if (result.deletedCount > 0) {
     res.status(201).send();

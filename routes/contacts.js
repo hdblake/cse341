@@ -9,6 +9,6 @@ router.get("/:id", contactController.getSingleContact);
 // CRUD routes for controller
 router.post("/", contactController.createContact);
 router.put("/:id", contactController.updateContact);
-router.post("/:id", contactController.deleteContact);
+router.delete("/:id", contactController.deleteContact);
 
 module.exports = router;

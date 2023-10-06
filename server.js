@@ -1,17 +1,14 @@
 const express = require("express");
 const mongodb = require("./db/connect");
-const cors = require("cors");
+const bodyParser = require("body-parser");
 
 const port = process.env.PORT || 3000;
 const app = express();
 
 app
-  .use(express.json())
+  .use(bodyParser.json())
   .use((req, res, next) => {
-    res.setHeader(
-      "Access-Control-Allow-Origin",
-      "https://cse341-o9h4.onrender.com"
-    );
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader(
       "Access-Control-Allow-Headers",
       "Origin, X-Requested-With, Content-Type, Accept, Z-Key"
